@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# bash script to
+file="/var/run/myscript.pid"
+mkdir -p "$(dirname "$file")"
+echo "$$" > "$file"
+trap 'echo "I hate the kill command"; rm "$file" ; exit' SIGTERM
+trap 'echo "Y U no love me?!"' SIGINT
+trap 'rm "$file" ; exit' SIGQUIT
+while true; do
+    echo "To infinity and beyond"
+    #sleep 3
+done
