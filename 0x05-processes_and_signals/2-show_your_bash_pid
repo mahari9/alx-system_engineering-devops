@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# List PIP processes and grep for lines containing the word "bash" using ps
+# shellcheck disable=SC2009
+ps auxf | grep bash
