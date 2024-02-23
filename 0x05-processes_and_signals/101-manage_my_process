@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+# Bash (init) script 101-manage_my_process that manages manage_my_process
+
+FILE="/var/run/my_process.pid"
+if [[ "x$1" == "xstart" ]]; then
+    ./manage_my_process &
+    echo "$!" > "$FILE"
+    # echo $(pgrep -f ./manage_my_process) > "$FILE"
+    echo "manage_my_process started"
+elif [[ "x$1" == "xstop" ]]; then
+    pkill -f ./manage_my_process
+    if [[ -e "$FILE" ]]; then
+	rm "$FILE"
+    fi
+    echo "manage_my_process stopped"
+elif [[ "x$1" == "xrestart" ]]; then
+    pkill -f ./manage_my_process
+    if [[ -e "$FILE" ]]; then
+        rm "$FILE"
+    fi
+    ./manage_my_process &
+    echo "$!" > "$FILE"
+    echo "manage_my_process restarted"
+else
+    echo "Usage: manage_my_process {start|stop|restart}"
+fi
