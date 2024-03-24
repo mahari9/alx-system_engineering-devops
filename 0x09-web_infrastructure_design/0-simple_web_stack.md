@@ -1,7 +1,7 @@
 # Simple Web Stack
 
 
-[Visit imgur](https://imgur.com/apCX7uR)
+[Visit miro](https://miro.com/app/board/uXjVKczq1Mk=/?share_link_id=634078820046)
 
 ## Description
 

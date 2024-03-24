@@ -1,6 +1,6 @@
 # Scaled Up Web Infrastructure
 
-[Visit board](https://miro.com/app/board/uXjVKdd_EOQ=/?share_link_id=876428175230)
+[Visit miro](https://miro.com/app/board/uXjVKdd_EOQ=/?share_link_id=876428175230)
 
 ## Description
 

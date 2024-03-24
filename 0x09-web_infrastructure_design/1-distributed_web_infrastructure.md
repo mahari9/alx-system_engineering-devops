@@ -1,6 +1,6 @@
 # Distributed Web Infrastructure
 
-[Visit imgur](https://imgur.com/oXbr1G0)
+[Visit miro](https://miro.com/app/board/uXjVKczgwgM=/?share_link_id=42107867995)
 
 ## Description
 

@@ -1,6 +1,6 @@
 # Secured and Monitored Web Infrastructure
 
-[Visit imgur](https://imgur.com/k0zY1WD)
+[Visit miro](https://miro.com/app/board/uXjVKcsUAUA=/?share_link_id=710682925139)
 
 ## Description
 
