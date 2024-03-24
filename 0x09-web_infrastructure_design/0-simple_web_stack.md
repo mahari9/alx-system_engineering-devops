@@ -1,7 +1,7 @@
 # Simple Web Stack
 
 
-[Visit Board](https://imgur.com/apCX7uR)
+[Visit imgur](https://imgur.com/apCX7uR)
 
 ## Description
 
