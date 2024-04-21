@@ -1,5 +1,5 @@
-# 0x0A. Configuration management
-### DevOps SysAdmin Scripting CI/CD
+# 0x0A.Configuration management
+#### DevOps  SysAdmin  Scripting  CI/CD
 
 
 ## Background Context
@@ -112,25 +112,24 @@ I love Puppetroot@6712bef7a528:~#
 mandatory
 
 
-Using Puppet, install `puppet-lint`.
+Using Puppet, install `flask` from `pip3`.
 
 Requirements:
 
--   Install `puppet-lint`
--   Version must be `2.5.0`
+-   Install `flask`
+-   Version must be `2.1.0`
 
 Example:
 
 ```
-root@d391259bf577:/# puppet apply 1-install_a_package.pp
-Notice: Compiled catalog for d391259bf577 in environment production in 0.14 seconds
+root@9665f0a47391:/# puppet apply 1-install_a_package.pp
+Notice: Compiled catalog for 9665f0a47391 in environment production in 0.14 seconds
+Notice: /Stage[main]/Main/Package[Flask]/ensure: created
 Notice: Applied catalog in 0.20 seconds
-root@d391259bf577:/# gem list
-
-*** LOCAL GEMS ***
-
-puppet-lint (2.5.0)
-root@d391259bf577:/#
+root@9665f0a47391:/# flask --version
+Python 3.8.10
+Flask 2.1.0
+Werkzeug 2.1.1
 
 ```
 ### 2\. Execute a command
