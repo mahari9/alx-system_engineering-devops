@@ -136,8 +136,7 @@ Your servers
   * `scp` transfers the file to the user home directory `~/`.
 
 * **1. Install nginx web server**
-  * [1-install_nginx_web_server](./1-install_nginx_web_server): Bash script
-  that configures a new Ubuntu machine with Nginx.
+  * Bash script that configures a new Ubuntu machine with Nginx.
   * Nginx listens on port 80.
   * When querying Nginx at its root `/` with a `curl` GET request,
   it returns a page containing the string `Hello World!`.
