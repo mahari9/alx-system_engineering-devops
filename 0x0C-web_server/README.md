@@ -118,14 +118,10 @@ Show
 Your servers
 ------------
 
-| Name | Username | IP | State |\
- |
-| --- | --- | --- | --- | --- |
-| 426036-web-01 | `ubuntu` | `52.73.243.18` | running |\
- |
+| Name         | Username | IP            | State   |
+| ------------ | -------- | ------------- | ------- |
+| 426036-web-01| `ubuntu` | `52.73.243.18`| running |
 
-|\
- |
 
 ## Tasks :page_with_curl:
 
