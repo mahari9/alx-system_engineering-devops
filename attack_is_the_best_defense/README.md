@@ -104,6 +104,6 @@ Once you found the password, share it in your answer file.
 
 **Repo:**
 
-      - GitHub repository: `alx-system_engineering-devops`
-      - Directory: `attack_is_the_best_defense`
-      - File: `1-dictionary_attack`
+-   GitHub repository: `alx-system_engineering-devops`
+-   Directory: `attack_is_the_best_defense`
+-   File: `1-dictionary_attack`
