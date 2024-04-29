@@ -5,14 +5,6 @@
 
 Concepts
 --------
-
-*For this project, students are expected to look at these concepts:*
-
--   [Load balancer](https://alx-intranet.hbtn.io/concepts/46)
--   [Web stack debugging](https://alx-intranet.hbtn.io/concepts/68)
-
-![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/275/qfdked8.png)
-
 Background Context
 ------------------
 
@@ -33,6 +25,10 @@ Resources
 -   [Introduction to load-balancing and HAproxy](https://alx-intranet.hbtn.io/rltoken/B7f3oz8i3Xvvom_YQZzLnQ "Introduction to load-balancing and HAproxy")
 -   [HTTP header](https://alx-intranet.hbtn.io/rltoken/sZ9v3Vq2tgLwN_PWVQketw "HTTP header")
 -   [Debian/Ubuntu HAProxy packages](https://alx-intranet.hbtn.io/rltoken/2VRAgtKKR9g6Xfb0xzGiSg "Debian/Ubuntu HAProxy packages")
+-   [Load balancer](https://alx-intranet.hbtn.io/concepts/46)
+-   [Web stack debugging](https://alx-intranet.hbtn.io/concepts/68)
+
+![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/275/qfdked8.png)
 
 Requirements
 ------------
