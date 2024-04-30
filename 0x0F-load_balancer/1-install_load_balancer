@@ -1,25 +1,32 @@
 #!/usr/bin/env bash
-# Install and configure HAproxy on your lb-01 server
-#+ Distribute requests using a roundrobin algorithm
-#+ HAproxy that can be managed via an init script
+# A script to install and configure HAProxy on lb-01 server
+# Configure HAProxy to send traffic to web-01 and web-02 servers
+# Distribute requests using a roundrobin algorithm
+# Make sure that HAProxy can be managed via an init script
 
-apt-get install -y software-properties-common
-add-apt-repository -y ppa:vbernat/haproxy-2.5
-apt-get -y update
-apt-get install -y haproxy=2.5.\*
+# Check for update and install HAproxy on my lb-01 server
+sudo apt-get -y update
+apt-get -y install haproxy
 
-echo "ENABLED=1" > /etc/default/haproxy
+# Configure the config file
+server_config=\
+"
+frontend  server_frontend
+        bind *:80
+        mode http
+        default_backend server_backend
+backend server_backend
+        balance roundrobin
+        server 426036-web-01 52.73.243.18 check
+        server 426036-web-02 35.153.57.40 check
+"
+echo "$server_config" | sudo tee -a /etc/haproxy/haproxy.cfg
 
-# Send traffic to web1 and web2 servers                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
-echo "
-   listen load_balancer
-   bind *:80
-   mode http
-   balance roundrobin
-   option httpclose
-   option forwardfor
-   server 426036-web-01 52.73.243.18 check
-   server 426036-web-02 35.153.57.40 check
-" >> /etc/haproxy/haproxy.cfg
+# Ensure haproxy started by init script
+echo "ENABLED=1" | sudo tee -a /etc/default/haproxy
 
-service haproxy start
+# Test the HAproxy configuration file
+sudo haproxy -c -f /etc/haproxy/haproxy.cfg
+
+# Restart the haproxy service
+sudo service haproxy restart
