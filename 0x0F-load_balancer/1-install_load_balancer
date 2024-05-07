@@ -5,10 +5,8 @@
 # Make sure that HAProxy can be managed via an init script
 
 # Check for update and install HAproxy on my lb-01 server
-apt-get install -y software-properties-common
-add-apt-repository -y ppa:vbernat/haproxy-2.5
 apt-get -y update
-apt-get install -y haproxy=2.5.\*
+apt-get install -y
 
 # Ensure haproxy started by init script
 echo "ENABLED=1" > /etc/default/haproxy
@@ -21,8 +19,8 @@ echo "
    balance roundrobin
    option httpclose
    option forwardfor
-   server 426036-web-01 52.73.243.18:80 check
-   server 426036-web-02 35.153.57.40:80 check
+   server web-01 426036-web-01 52.73.243.18:80 check
+   server web-02 426036-web-02 35.153.57.40:80 check
 " >> /etc/haproxy/haproxy.cfg
 
 service haproxy start
