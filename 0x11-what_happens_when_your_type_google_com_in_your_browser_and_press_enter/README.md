@@ -7,6 +7,7 @@ Let’s practice by exploring the infrastructure side (network, servers, securit
 ![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/298/aJPw3mw.jpg)
 
 # Requirements
+
 **General**
 * You can post your blog post on the platform of your choice, LinkedIn or Medium are good ones
 * A `README.md` file, at the root of the folder of the project, is mandatory
@@ -32,6 +33,7 @@ Requirements, your post must cover:
 - Web server
 - Application server
 - Database
+
 Publish your blog post on Medium or LinkedIn; share the URL of your blog post in your answer file and in the field below.
 Please, remember that these blogs must be written in English to further your technical ability in a variety of settings.
 
@@ -54,12 +56,16 @@ The diagram should show:
 - that the web server answers the request by serving a web page
 - that the application server generates the web page
 - that the application server request data from the database
+
 [Gliffy](https://www.gliffy.com/ "Gliffy") is free and what I personally use, but feel free to use what fits you best.
 
 Some unrelated examples:
+
 ![](https://imgur.com/R8R3sqC)
+
 Share the URL of your diagram image in your answer file and il the field below.
 Please, remember that these blogs must be written in English to further your technical ability in a variety of settings.
+
 **Repo:**
 
 - GitHub repository: `alx-system_engineering-devops`
@@ -67,13 +73,16 @@ Please, remember that these blogs must be written in English to further your tec
 - File: `1-what_happen_when_diagram`
 
 ### 2\. Contribute!
+
 Folks on the Internet have been trying to put together a comprehensive answer to the question. Help them by submitting a pull request. Paste the link in your answer file.
-![](https://github.com/alex/what-happens-when#the-g-key-is-pressed)
+
+https://github.com/alex/what-happens-when#the-g-key-is-pressed
 
 Requirements:
 
 - The pull request must bring meaningful value (not a typo correction or style improvement)
 - Share the pull request URL in your answer file and in the field below
+
 Please, remember that these blogs must be written in English to further your technical ability in a variety of settings.
 
 **Repo:**
