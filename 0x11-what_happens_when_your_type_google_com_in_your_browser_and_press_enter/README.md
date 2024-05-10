@@ -12,7 +12,7 @@ Let’s practice by exploring the infrastructure side (network, servers, securit
 * You can post your blog post on the platform of your choice, LinkedIn or Medium are good ones
 * A `README.md` file, at the root of the folder of the project, is mandatory
 # More Info
-**Manual QA Review**
+## Manual QA Review
 **It is your responsibility to request a review for your blog from a peer before the project’s deadline. If no peers have been reviewed, you should request a review from a TA or staff member.**
 
 ## Tasks
@@ -22,7 +22,7 @@ This question is a classic and still widely used interview question for many typ
 
 This question is a good test of whether you understand DNS. Many software engineering candidates struggle with this concept, so if you do well on this question, you are already way ahead of the curve. If you take this project seriously and write an excellent article, it may be something that will grab the attention of future employers.
 
-Write a blog post explaining what happens when you type `https://www.google.com` in your browser and press `Enter.`
+Write a blog post explaining what happens when you type https://www.google.com in your browser and press `Enter.`
 Requirements, your post must cover:
 
 - DNS request
@@ -58,10 +58,9 @@ The diagram should show:
 - that the application server request data from the database
 
 [Gliffy](https://www.gliffy.com/ "Gliffy") is free and what I personally use, but feel free to use what fits you best.
-
 Some unrelated examples:
-
-![](https://imgur.com/R8R3sqC)
+[Image](https://imgur.com/i9ivkdo "Image")
+[Image](https://imgur.com/R8R3sqC "Image")
 
 Share the URL of your diagram image in your answer file and il the field below.
 Please, remember that these blogs must be written in English to further your technical ability in a variety of settings.
