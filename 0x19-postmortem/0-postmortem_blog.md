@@ -1,7 +1,6 @@
-# 0x19. Postmortem
-**DevOps SysAdmin**
+# Postmortem
 
-![]()
+![](https://drive.google.com/file/d/1qmRwRw6HpxpkwCUuGzjjbUY-8F-5aSiw/view?usp=sharing)
 
 ## Issue Summary
 
