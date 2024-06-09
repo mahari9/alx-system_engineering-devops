@@ -1,6 +1,6 @@
 # Postmortem
 
-![](https://drive.google.com/file/d/1qmRwRw6HpxpkwCUuGzjjbUY-8F-5aSiw/view?usp=sharing)
+![fallen king lion](My_postmortem.drawio.png)
 
 ## Issue Summary
 
