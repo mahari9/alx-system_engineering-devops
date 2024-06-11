@@ -6,9 +6,9 @@ Concepts
 ========
 For this project, we expect you to look at these concepts:
 
-[Web Server](https://intranet.alxswe.com/concepts/17 "Web Server")
-[Server](https://intranet.alxswe.com/concepts/67 "Server")
-[Web stack debugging](https://intranet.alxswe.com/concepts/68 "Web stack debugging")
+* [Web Server](https://intranet.alxswe.com/concepts/17 "Web Server")
+* [Server](https://intranet.alxswe.com/concepts/67 "Server")
+* [Web stack debugging](https://intranet.alxswe.com/concepts/68 "Web stack debugging")
 
 
 Background Context
@@ -22,11 +22,11 @@ Resources
 ---------
 **Read or watch:**
 
-* [Application server vs web server]("Application server vs web server")
-* [How to Serve a Flask Application with Gunicorn and Nginx on Ubuntu 16.04]("How to Serve a Flask Application with Gunicorn and Nginx on Ubuntu 16.04") (As mentioned in the video, do not install Gunicorn using `virtualenv`, just install everything globally)
-* [Running Gunicorn]("Running Gunicorn")
-* [Be careful with the way Flask manages slash]("Be careful with the way Flask manages slash") in [route]("route") - `strict_slashes`
-* [Upstart documentation]("Upstart documentation")
+* [Application server vs web server](https://www.f5.com/glossary "Application server vs web server")
+* [How to Serve a Flask Application with Gunicorn and Nginx on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-gunicorn-and-nginx-on-ubuntu-16-04 "How to Serve a Flask Application with Gunicorn and Nginx on Ubuntu 16.04") (As mentioned in the video, do not install Gunicorn using `virtualenv`, just install everything globally)
+* [Running Gunicorn](https://docs.gunicorn.org/en/latest/run.html "Running Gunicorn")
+* [Be careful with the way Flask manages slash](https://werkzeug.palletsprojects.com/en/3.0.x/ "Be careful with the way Flask manages slash") in [route](https://flask.palletsprojects.com/en/3.0.x/api/#flask.Blueprint.route "route") - `strict_slashes`
+* [Upstart documentation](https://doc.ubuntu-fr.org/upstart"Upstart documentation")
 
 Requirements
 ------------
@@ -60,6 +60,7 @@ Tasks
 
 ### 0\. Set up development with Python
 **mandatory**
+
 Let’s serve what you built for [AirBnB clone v2 - Web framework](https://intranet.alxswe.com/projects/290"AirBnB clone v2 - Web framework") on web-01. This task is an exercise in setting up your development environment, which is used for testing and debugging your code before deploying it to production.
 
 Requirements:
@@ -95,6 +96,7 @@ Hello HBNB!ubuntu@229-web-01:~/AirBnB_clone_v2$
 * File: `README.md`
  
 ### 1\. Set up production with Gunicorn
+
 **mandatory**
 Now that you have your development environment set up, let’s get your production application server set up with `Gunicorn` on `web-01`, port `5000`. You’ll need to install `Gunicorn` and any libraries required by your application. Your `Flask` application object will serve as a [WSGI](https://www.fullstackpython.com/wsgi-servers.html "WSGI") entry point into your application. This will be your production environment. As you can see we want the production and development of your application to use the same port, so the conditions for serving your dynamic content are the same in both environments.
 
@@ -127,6 +129,7 @@ Hello HBNB!ubuntu@229-web-01:~$
  
 ### 2\. Serve a page with Nginx
 **mandatory**
+
 Building on your work in the previous tasks, configure `Nginx` to serve your page from the route `/airbnb-onepage/`
 
 Requirements:
@@ -177,6 +180,7 @@ Hello HBNB!vagrant@ubuntu-xenial:~$
  
 ## 3\. Add a route with query parameters
 **mandatory**
+
 Building on what you did in the previous tasks, let’s expand our web application by adding another service for `Gunicorn` to handle. In `AirBnB_clone_v2/web_flask/6-number_odd_or_even`, the route `/number_odd_or_even/<int:n>` should already be defined to render a page telling you whether an integer is odd or even. You’ll need to configure `Nginx` to proxy HTTP requests to the route `/airbnb-dynamic/number_odd_or_even/(any integer)` to a `Gunicorn` instance listening on port `5001`. The key to this exercise is getting `Nginx` configured to proxy requests to processes listening on two different ports. You are not expected to keep your application server processes running. If you want to know how to run multiple instances of `Gunicorn` without having multiple terminals open, see tips below.
 
 Requirements:
@@ -244,6 +248,7 @@ vagrant@ubuntu-xenial:~$ curl 35.231.193.217/airbnb-dynamic/number_odd_or_even/6
  
 ### 4\. Let's do this for your API
 **mandatory**
+
 Let’s serve what you built for [AirBnB clone v3 - RESTful API](https://intranet.alxswe.com/projects/301 "AirBnB clone v3 - RESTful API") on `web-01`.
 
 Requirements:
@@ -281,6 +286,7 @@ vagrant@ubuntu-xenial:~$
  
 ### 5\. Serve your AirBnB clone
 **mandatory**
+
 Let’s serve what you built for [AirBnB clone - Web dynamic](https://intranet.alxswe.com/projects/309 "AirBnB clone - Web dynamic") on `web-01`.
 
 Requirements:
@@ -305,6 +311,7 @@ After loading, your website should look like this:
  
 ### 6\. Deploy it!
 `advanced`
+
 Once you’ve got your application server configured, you want to set it up to run by default when Linux is booted. This way when your server inevitably requires downtime (you have to shut it down or restart it for one reason or another), your `Gunicorn` process(es) will start up as part of the system initialization process, freeing you from having to manually restart them. For this we will use `systemd`. You can read more about `systemd` in the documentation posted at the top of this project but to put it succinctly, it is a system initialization daemon for the Linux OS (amongst other things). For this task you will write a `systemd` script which will start your application server for you. As mentioned in the video at the top of the project, you do not need to create a Unix socket to bind the process to.
 
 Requirements:
@@ -344,6 +351,7 @@ bob@dylan:~$
  
 ### 7\. No service interruption
 `advanced`
+
 One of the most important metrics for any Internet-based business is its uptime. It is the percentage of the time over a given period that the service/product is accessible to customers. Let’s pick the example of Amazon.com, for every minute of downtime (which is the opposite of uptime), [it costs the company $2M](https://storageservers.wordpress.com/2016/03/14/amazon-downtime-costs-2-million-loss-per-minute/ "it costs the company $2M"). Yet, application servers often need to restart to update with the new version of the code or new configuration, when doing this operation, an application server cannot serve traffic, which meant downtime.
 
 To avoid this; application servers are designed with a master/workers infrastructure. The master is in charge of:
