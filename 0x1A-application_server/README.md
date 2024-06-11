@@ -61,7 +61,7 @@ Tasks
 ### 0\. Set up development with Python
 **mandatory**
 
-Let’s serve what you built for [AirBnB clone v2 - Web framework](https://intranet.alxswe.com/projects/290"AirBnB clone v2 - Web framework") on web-01. This task is an exercise in setting up your development environment, which is used for testing and debugging your code before deploying it to production.
+Let’s serve what you built for [AirBnB clone v2 - Web framework](https://intranet.alxswe.com/projects/290 "AirBnB clone v2 - Web framework") on web-01. This task is an exercise in setting up your development environment, which is used for testing and debugging your code before deploying it to production.
 
 Requirements:
 
