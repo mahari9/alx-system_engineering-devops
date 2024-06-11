@@ -26,7 +26,7 @@ Resources
 * [How to Serve a Flask Application with Gunicorn and Nginx on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-gunicorn-and-nginx-on-ubuntu-16-04 "How to Serve a Flask Application with Gunicorn and Nginx on Ubuntu 16.04") (As mentioned in the video, do not install Gunicorn using `virtualenv`, just install everything globally)
 * [Running Gunicorn](https://docs.gunicorn.org/en/latest/run.html "Running Gunicorn")
 * [Be careful with the way Flask manages slash](https://werkzeug.palletsprojects.com/en/3.0.x/ "Be careful with the way Flask manages slash") in [route](https://flask.palletsprojects.com/en/3.0.x/api/#flask.Blueprint.route "route") - `strict_slashes`
-* [Upstart documentation](https://doc.ubuntu-fr.org/upstart"Upstart documentation")
+* [Upstart documentation](https://doc.ubuntu-fr.org/upstart "Upstart documentation")
 
 Requirements
 ------------
