@@ -14,11 +14,11 @@ def number_of_subscribers(subreddit):
       The number of subscribers (integer) or 0 if the subreddit is invalid.
     """
     url = "https://www.reddit.com/r/{}/about.json".format(subreddit)
-    headers = {'User-Agent': 'linux:0x16.api.advanced:v1.0.0 (by /u/bdov_)'}
-    try:
-        response = requests.get(url, headers=headers, allow_redirects=False)
-        response.raise_for_status()
-        data = response.json()
-        return data.get('data', {}).get('subscribers', 0)
-    except requests.exceptions.RequestException:
+    headers = {
+        "User-Agent": "script:0x16-api_advanced:0.1 (by u/ Careful_pin_)"
+    }
+    response = requests.get(url, headers=headers, allow_redirects=False)
+    if response.status_code == 404:
         return 0
+    results = response.json().get("data")
+    return results.get("subscribers")
